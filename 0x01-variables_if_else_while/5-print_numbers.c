@@ -10,7 +10,8 @@ int main(void)
 {
 	int in;
 
-	for (in = 0; in <= 10; in++)
-	printf("%d\n", in);
+	for (in = 0; in < 10; in++)
+	printf("%d", in);
+	printf("\n");
 	return (0);
 }
