@@ -1,15 +1,13 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /**
- * Main - Program to detect if entered number is positve, negative or zero
+ * main - Entry point
  *
  * Return: Always 0 (Success)
  */
 
 int main(void)
-
 {
 	int n;
 
