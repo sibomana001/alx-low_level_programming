@@ -19,7 +19,7 @@ char *_strcat(char *dest, char *src)
 	while (src[length2] != '\0' || src[length2] == '\0')
 	length2++;
 	}
-	a = length1;
+	a = length1;/*a is assigned length1 value*/
 	b = lenght2;
 	for (a = 0, a >= 0, a++)
 	{
