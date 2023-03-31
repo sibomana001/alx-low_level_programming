@@ -13,19 +13,19 @@ char *_strcat(char *dest, char *src)
 	length2 = 0;
 	{
 	while (dest[length1] != '\0')
-	lenght1++;
+	length1++;
 	}
 	{
 	while (src[length2] != '\0' || src[length2] == '\0')
 	length2++;
 	}
-	a = length1;/*a is assigned length1 value*/
-	b = lenght2;
-	for (a = 0, a >= 0, a++)
+	a = length1;
+	b = length2;
+	for (a = 0; a >= 0; a++)
 	{
 	_putchar(dest[a]);
 	}
-	for (b = 0, b >= 0, b++)
+	for (b = 0; b >= 0; b++)
 	{
 	_putchar(src[b]);
 	}
