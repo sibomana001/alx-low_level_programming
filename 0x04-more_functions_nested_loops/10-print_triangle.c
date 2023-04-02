@@ -7,6 +7,9 @@ void print_triangle(int size)
 {
 	int i, j, z;
 
+	if (size <= 0)
+		_putchar('\n');
+
 	for (i = size - 1; i >= 0; i--)
 	{
 		for (j = i; j >= 1; j--)
