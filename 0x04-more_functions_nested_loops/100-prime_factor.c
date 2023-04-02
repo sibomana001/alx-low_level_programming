@@ -21,5 +21,5 @@ int main(void)
 		}
 	}
 	printf("%lu\n", fact);
-	return (fact);
+	return (0);
 }
