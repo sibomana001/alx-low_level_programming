@@ -1,39 +1,27 @@
 #include "main.h"
 /**
- * *_strncpy - function that copies a string.
- * @dest: string to be concatenated on
- * @src: String to concatenate on dest string
- * @n: number of characters from src
- * Return:Copied string
+ * _strncpy - copy a string
+ * @dest: input value
+ * @src: input value
+ * @n: input value
+ *
+ * Return: dest
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int length1, a,  length2;
+	int j;
 
-	length1 = 0;
-	length2 = 0;
-	while (dest[length1] != '\0')
+	j = 0;
+	while (j < n && src[j] != '\0')
 	{
-	length1++;
+		dest[j] = src[j];
+		j++;
 	}
-	while (src[length2] != '\0')
+	while (j < n)
 	{
-	length2++;
+		dest[j] = '\0';
+		j++;
 	}
-	if (n <= length2)
-	{
-		for (a = 0; a < n; a++)
-		{
-		dest[a] = src[a];
-		}
-	}
-	else
-	{
-		for (a = 0; a <= length2; a++)
-		{
-			dest[a] = src[a];
-			dest[length2 + 1] = '\0';
-		}
-	}
+
 	return (dest);
 }
