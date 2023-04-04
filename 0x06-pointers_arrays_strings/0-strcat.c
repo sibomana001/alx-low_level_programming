@@ -2,14 +2,11 @@
 #include <unistd.h>
 /**
  * *_strcat - function that concatenates two strings.
+ * _putchar - function that prints on screen
  * @dest: string to be concatenated on
  * @src: String to concatenate on dest string
+ * @c: variable for _putchar function
  * Return:Concatenated string
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately
  */
 int _putchar(char c)
 {
@@ -21,21 +18,19 @@ char *_strcat(char *dest, char *src)
 
 	length1 = 0;
 	length2 = 0;
-	{
 	while (dest[length1] != '\0')
+	{
 	length1++;
 	}
+	while (src[length2] != '\0')
 	{
-	while (src[length2] != '\0' || src[length2] == '\0')
 	length2++;
 	}
-	a = length1;
-	b = length2;
-	for (a = 0; a >= 0; a++)
+	for (a = 0; a <= length1; a++)
 	{
 	_putchar(dest[a]);
 	}
-	for (b = 0; b >= 0; b++)
+	for (b = 0; b <= length2; b++)
 	{
 	_putchar(src[b]);
 	}
