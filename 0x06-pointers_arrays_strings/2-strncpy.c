@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * *_strncat - function that concatenates two strings.
+ * *_strncpy - function that copies a string.
  * @dest: string to be concatenated on
  * @src: String to concatenate on dest string
  * @n: number of characters from src
- * Return:Concatenated string
+ * Return:Copied string
  */
-char *_strncat(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
 	int length1, a,  length2;
 
