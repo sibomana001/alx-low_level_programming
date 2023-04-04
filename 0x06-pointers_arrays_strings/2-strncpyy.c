@@ -22,7 +22,7 @@ char *_strncpy(char *dest, char *src, int n)
 	}
 	if (n <= length2)
 	{
-		for (a = 0; a <= n; a++)
+		for (a = 0; a < n; a++)
 		{
 		dest[a] = src[a];
 		}
