@@ -26,18 +26,13 @@ char *_strncpy(char *dest, char *src, int n)
 		{
 		dest[a] = src[a];
 		}
-		while (length2 < n)
-	{
-		dest[length2 + 1] = '\0';
-		lenght2++;
-	}
-
 	}
 	else
 	{
 		for (a = 0; a <= length2; a++)
 		{
 			dest[a] = src[a];
+			dest[length2 + 1] = '\0';
 		}
 	}
 	return (dest);
