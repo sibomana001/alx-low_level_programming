@@ -3,7 +3,7 @@
  * *_strncat - function that concatenates two strings.
  * @dest: string to be concatenated on
  * @src: String to concatenate on dest string
- * @n: bytes from src
+ * @n: number of characters from src
  * Return:Concatenated string
  */
 char *_strncat(char *dest, char *src, int n)
@@ -20,9 +20,9 @@ char *_strncat(char *dest, char *src, int n)
 	{
 	length2++;
 	}
-	for (a = 0; a <= length2; a++)
+	for (a = 0; a <= n; a++)
 	{
-	dest[length1 + a] = src[a];
+	dest[length1 + n] = src[a];
 	}
 	return (dest);
 }
