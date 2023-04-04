@@ -26,10 +26,13 @@ char *_strncat(char *dest, char *src, int n)
 		{
 		dest[length1 + a] = src[a];
 		}
-	else 
+	}
+	else
+	{	
 		for (a = 0; a <= length2; a++)
 		{
-			dest[lenght1 + a] = src[a];
+			dest[length1 + a] = src[a];
 		}
+	}
 	return (dest);
 }
