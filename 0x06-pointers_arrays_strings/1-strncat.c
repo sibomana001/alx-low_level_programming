@@ -20,9 +20,16 @@ char *_strncat(char *dest, char *src, int n)
 	{
 	length2++;
 	}
-	for (a = 0; a < n; a++)
+	if (n <= length2)
 	{
-	dest[length1 + a] = src[a];
-	}
+		for (a = 0; a < n; a++)
+		{
+		dest[length1 + a] = src[a];
+		}
+	else 
+		for (a = 0; a <= length2; a++)
+		{
+			dest[lenght1 + a] = src[a];
+		}
 	return (dest);
 }
