@@ -24,14 +24,14 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		for (a = 0; a < n; a++)
 		{
-		dest[length1 + a] = src[a];
+		dest[a] = src[a];
 		}
 	}
 	else
 	{
 		for (a = 0; a <= length2; a++)
 		{
-			dest[length1 + a] = src[a];
+			dest[a] = src[a];
 		}
 	}
 	return (dest);
