@@ -9,3 +9,24 @@
  */
 int **alloc_grid(int width, int height)
 {
+	int **grid;
+	int x, y;
+
+	if (width == 0 || height == 0)
+		return (NULL);
+	grid = malloc(sizeof(int*) * width * height);
+
+	if (*grid == 0)
+		return (NULL);
+
+	for (y = 0; y < height; y++)
+	{
+		for (x = 0; x < width; x++)
+		{
+			grid[x] = 0;
+		}
+		_putchar('\n');
+	}
+	return (grid);
+}
+			
