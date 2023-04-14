@@ -22,10 +22,7 @@ int **alloc_grid(int width, int height)
 	for (y = 0; y < height; y++)
 	{
 		for (x = 0; x < width; x++)
-		{
-			grid[x] = 0;
-		}
-		_putchar('\n');
+			grid[x][y] = 0;
 	}
 	return (grid);
 	free(grid);
